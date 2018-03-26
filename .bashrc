@@ -135,11 +135,13 @@ ipif() {
     echo
 }
 
+# Verificar espacio de pkg en cache
 espacio () {
     echo $(clear)
     du -lsh /var/cache/pacman/pkg
 }
 
+# Limpiar los pkg de cache y dejar solo la ultima versión
 limpiar () {
     echo $(clear)
     echo "Limpiando paquetes cache..."
@@ -147,6 +149,16 @@ limpiar () {
     echo ""
     echo "Limpiando paquetes huérfanos..."
     sudo pacman -Rs $(pacman -Qtdq) &&
+    echo $(clear)
+}
+
+# Mantenimiento de firmas de pkg
+firma () {
+    sudo pacman-hey --init && sleep 5s &&
+    echo $(clear)
+    sudo pacman-key populate archlinux && sleep 5s
+    echo $(clear)
+    sudo pacman-key --refresh-keys &&
     echo $(clear)
 }
 
