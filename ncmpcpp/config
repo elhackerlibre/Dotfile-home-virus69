@@ -1,0 +1,55 @@
+## Configuración base
+ncmpcpp_directory                       =    "~/.ncmpcpp"
+mpd_music_dir                           =    "/home/virus69/Música"
+mpd_host                                =    "localhost"
+mpd_port                                =    "6600"
+mpd_connection_timeout                  =    5
+
+## Visualiador
+visualizer_output_name                  =   "FIFO"
+visualizer_fifo_path                    =   "/tmp/mpd.fifo"
+visualizer_in_stereo                    =   "no"
+visualizer_sync_interval                =   "10"
+visualizer_type                         =   "spectrum"
+visualizer_look                         =   "▋▋"
+visualizer_color                        =   "red,cyan,red,cyan"
+#execute_on_song_change                  =   "~/.ncmpcpp/CoverArt.sh"
+execute_on_song_change                  =   ~/.ncmpcpp/CoverArtDark.sh && notify-send "Sonando ♫" "$(mpc current)"
+
+## Interface
+song_list_format                        =   "                               {{$7%n $3• $2%a $3• $7%t}|{%f}}{$2$R%l}"
+song_status_format                      =   "{{%a{ $2//$9 %b{, %y}} $2//$9}{%t$/b}}|{$b%f$/b}"
+song_library_format                     =   "{{%a - %t} (%b)}|{%f}"
+now_playing_prefix                      =   "$b$9▶"
+now_playing_suffix                      =   "$8$/b"
+progressbar_look                        =   "─╼ "
+
+user_interface                          =   classic
+playlist_display_mode                   =   classic
+external_editor                         =   nano
+main_window_color                       =   default
+statusbar_color                         =   default
+locked_screen_width_part                =   "70"
+
+autocenter_mode                         =   yes
+colors_enabled                          =   yes
+mouse_support                           =   yes
+statusbar_visibility                    =   no
+enable_window_title                     =   no
+titles_visibility                       =   no
+header_visibility                       =   no
+follow_now_playing_lyrics               =   no
+
+## Colors
+color1                                  =   "green"
+color2                                  =   "green"
+alternative_ui_separator_color          =   "magenta"
+active_column_color                     =   "cyan"
+header_window_color                     =   "red"
+main_window_highlight_color             =   "white"
+state_line_color                        =   "yellow"
+state_flags_color                       =   "cyan"
+progressbar_color                       =   "cyan"
+progressbar_elapsed_color               =   "red"
+volume_color                            =   "red"
+window_border_color                     =   "red"
