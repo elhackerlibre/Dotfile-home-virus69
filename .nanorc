@@ -1,0 +1,31 @@
+include "/usr/share/nano/*.nanorc"
+
+set autoindent
+set boldtext
+set casesensitive
+set constantshow
+set backup
+set backupdir "~/.config/nano_backup"
+set brackets ""')>]}"
+set historylog
+set linenumbers
+set matchbrackets "(<[{)>]}"
+set mouse
+set nonewlines
+set smooth
+set showcursor
+set fill -8
+set tabsize 4
+set tabstospaces
+set tempfile
+set trimblanks
+set positionlog
+
+## COLORS
+ set titlecolor brightwhite,red
+ set statuscolor brightwhite,red
+ set errorcolor brightwhite,blue
+ set selectedcolor brightwhite,cyan
+ set numbercolor red
+ set keycolor red
+ set functioncolor yellow
