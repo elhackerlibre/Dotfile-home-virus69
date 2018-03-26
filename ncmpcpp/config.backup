@@ -1,0 +1,53 @@
+## Configuración base
+ncmpcpp_directory                       =    "~/.ncmpcpp"
+mpd_music_dir                           =    "/home/virus69/Música"
+mpd_host                                =    "localhost"
+mpd_port                                =    "6600"
+mpd_connection_timeout                  =    5
+
+## Visualiador
+visualizer_output_name                  =   "FIFO"
+visualizer_fifo_path                    =   "/tmp/mpd.fifo"
+visualizer_in_stereo                    =   "no"
+visualizer_sync_interval                =   "10"
+visualizer_type                         =   "spectrum"
+visualizer_look                         =   "▋▋"
+visualizer_color                        =   "red,cyan,red,cyan"
+execute_on_song_change                  =   "~/.ncmpcpp/CoverArt.sh"
+
+## Interface
+user_interface							=	"alternative"
+playlist_display_mode					=	"classic"
+browser_display_mode                    =   "columns"
+search_engine_display_mode              =   "columns"
+playlist_editor_display_mode            =   "columns"
+#message_delay_time                     =   "3"
+locked_screen_width_part                =   "70"
+autocenter_mode							=	"yes"
+centered_cursor							=	"yes"
+mouse_support                           =   "yes"
+display_bitrate                         =   "no"
+header_visibility						=	"no"
+playlist_shorten_total_times			=	"no"
+statusbar_visibility					=	"no"
+titles_visibility                       =   "no"
+enable_window_title                     =   "no"
+progressbar_look                        =   "─╼"
+#progressbar_look						=	"▃▃▃"
+#progressbar_look                       =   "◾◾◽"
+#progressbar_look                       =   "─⊙ "
+
+alternative_header_first_line_format    =   "$(white)─┤ $b$(red)%a$(end)$/b ├─$(end)"
+song_list_format                        =   "                             {{$2%n - }{$7%a - $2%t}|{%f}}{$7$R%l}"
+now_playing_prefix                      =   "$b$9>"
+now_playing_suffix                      =   "$8$/b"
+
+## Colors
+color1                                  =   "white"
+color2                                  =   "black"
+main_window_color						=	"cyan"
+header_window_color						=	"cyan"
+progressbar_elapsed_color				=	"cyan"
+volume_color							=	"cyan"
+progressbar_color						=	"red"
+alternative_ui_separator_color          =	"cyan"
